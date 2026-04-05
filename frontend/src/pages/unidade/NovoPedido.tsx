@@ -6,11 +6,9 @@ import { Label } from "@/components/ui/label"
 import { useCartStore } from "@/store/cartStore"
 import { useNavigate } from "react-router-dom"
 import api from "@/api/client"
-import { useAuthStore } from "@/store/authStore"
 
 export default function NovoPedido() {
   const { itens, remover, atualizar, limpar, total } = useCartStore()
-  const { unidade_id } = useAuthStore()
   const navigate = useNavigate()
   const [observacoes, setObservacoes] = useState("")
   const [loading, setLoading] = useState(false)

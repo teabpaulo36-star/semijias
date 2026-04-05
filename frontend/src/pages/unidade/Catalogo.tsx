@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import { ShoppingCart, Plus, Check } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
 import { getProdutos, type Produto } from "@/api/produtos"
 import { getCategorias, type Categoria } from "@/api/categorias"
 import { useCartStore } from "@/store/cartStore"
