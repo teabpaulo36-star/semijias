@@ -13,7 +13,7 @@ app = FastAPI(title="Sistema Semi-Joias", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Em produção: colocar apenas o domínio do Vercel
+    allow_origins=["https://semijias-qjk6.vercel.app", "http://localhost:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
